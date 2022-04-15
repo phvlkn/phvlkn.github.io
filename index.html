@@ -1,15 +1,37 @@
-<?php
-$method = 'wall.get';
-$token = '07f1415ab39c3f2df764d441bab8137cc7635fbc90b9d62cfe08f5c9f05e2b5dee8a71f02a250f44c56de';
-$version = 5.131;
-
-$params = http_build_query([
-    'owner_id' => 120159853,
-    'access_token' => $token,
-    'v' => $version
-]);
-
-$url = "https://api.vk.com/method/{$method}?{$params}&access_token={$token}&v={$version}";
-$result = json_decode(file_get_contents($url), true);
-print_r($result);
-?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <style>
+        body{
+            background-color: #e5e5e5;
+        }
+        .cen{
+            float: center;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p{
+            max-width: 90%;
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto 
+        }
+    </style>
+    <title>The Weeknd</title>
+</head>
+<body>
+    <div class="main">
+        <h1 class="cen">THE WEEKND</h1>
+    
+        <nav class="cen">
+            <a href="/index.html">Биография</a> | <a href="/disk.html">Дискография</a>
+        </nav>
+        <h2 class="cen">Биография</h2>
+        <img src="main.jpg">
+        <p class="cen"><b>Э́йбел Макко́нен Те́сфайе</b>(англ. Abel Makkonen Tesfaye; род. 16 февраля 1990, Торонто, Канада), профессионально известный как Уи́кнд (The Weeknd) — канадский певец, автор песен и музыкальный продюсер эфиопского происхождения. В конце 2010 года Тесфайе анонимно загрузил несколько песен на YouTube под именем «The Weeknd». На протяжении 2011 года он выпустил три микстейпа по 9 песен в каждом: House of Balloons, Thursday и Echoes of Silence, которые были одобрены критиками. Год спустя он выпустил сборник Trilogy: тридцать треков, состоящих из ремастированных версий микстейпового материала и трёх дополнительных песен. Альбом был выпущен на Republic Records и его собственном лейбле XO.</p>
+    </div>
+</body>
+</html>
